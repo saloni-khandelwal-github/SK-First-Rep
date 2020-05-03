@@ -1,0 +1,22 @@
+Softwre needed to start with HTML, CSS and Javascript
+- Github
+- Git
+- Chrome and Chrome Developer Tools
+- NodeJS -> NPM -> BrowserSync
+- Editor: VS/Sublime Text
+
+1. History of HTML
+- You need to use <!DOCTYPE html> because historically not all documents followed html protocol. If you don't use it, you go into browser's quirks mode. No space between <!D
+
+- HTML5 Standard was created by W3C and you can check whether you comply by using the validator on W3.org website. 
+
+- Browsers (which form the WHATWG group) are ahead of HTML5 protocols and keep extending support, and just call it HTML. You can use caniuse.com to check what browser supports what tags or properties.
+
+2. More about HTML tags
+- New HTML tags to explore: <section> <aside> <article>
+- Character Entity References: &nbsp; is not NON BREAKING space, not to be used randomly for space. &lt;, &gt;, &amp; is for < , > and &.
+- Use # id tags to create internal links within the page to scroll to particular sections of the page
+- When using images, use the Height and Width attribute, so that the space in the HTML document for the image is preserved while rendering
+
+
+ 

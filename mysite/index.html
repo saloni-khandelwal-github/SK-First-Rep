@@ -7,13 +7,47 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
     <title>Saloni's First HTML File</title>
+    <style>
+        @media (min-width: 0px) {
+            .leftPane {
+                float: left;
+                width: 33.33%;
+            }
+
+            .rightPane {
+                float: left;
+                width: 66.66%;
+            }
+        }
+        .box {
+            padding: 10px;
+            border: 2px solid white;
+            box-sizing: border-box;
+        }
+
+        .navMenu {
+            background-color: thistle;
+            padding: 10px 5px;
+            margin-bottom: 5px;
+        }
+
+    </style>
 </head>
 <body>
     <h1>Coursera HTML Course</h1>
-    <div>Trying to learn coding again, pretty scary</div>
+    <div >Trying to learn coding again, pretty scary</div>
     <div> My div to commit a modified file</div>
     <div>Changing my credentials</div>
     <div>Attempt #2 deleted credentials from Credentials manager again</div>
     <div> Attempt #3 - Made changes in git config file</div>
+    <div class="leftPane box">
+        <ul>
+            <li class="navMenu">Home</li>
+            <li class="navMenu">About</li>
+            <li class="navMenu">Contact</li>
+        </ul>
+    </div>
+    <div class="rightPane box"> This div is floating on the right, does it overlap with the text on the left</div>
+    <div>This is tester text, to check if it overlaps with the right text, but for that I'll have to make it bigger. However if I double the size, then it will flow around the floating text like water, which I can see right here.This is tester text, to check if it overlaps with the right text, but for that I'll have to make it bigger. However if I double the size, then it will flow around the floating text like water, which I can see right here.</div>
 </body>
 </html>
