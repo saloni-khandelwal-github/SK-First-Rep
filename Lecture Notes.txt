@@ -5,20 +5,65 @@ Softwre needed to start with HTML, CSS and Javascript
 - NodeJS -> NPM -> BrowserSync
 - Editor: VS/Sublime Text
 
-1. History of HTML
+1. HTML
 - You need to use <!DOCTYPE html> because historically not all documents followed html protocol. If you don't use it, you go into browser's quirks mode. No space between <!D
 
 - HTML5 Standard was created by W3C and you can check whether you comply by using the validator on W3.org website. 
 
 - Browsers (which form the WHATWG group) are ahead of HTML5 protocols and keep extending support, and just call it HTML. You can use caniuse.com to check what browser supports what tags or properties.
 
-2. More about HTML tags
 - New HTML tags to explore: <section> <aside> <article>
+
 - Character Entity References: &nbsp; is not NON BREAKING space, not to be used randomly for space. &lt;, &gt;, &amp; is for < , > and &.
+
 - Use # id tags to create internal links within the page to scroll to particular sections of the page
+
 - When using images, use the Height and Width attribute, so that the space in the HTML document for the image is preserved while rendering
 
 https://github.com/saloni-khandelwal-github/SK-First-Rep.git
 
+2. CSS
+
+
+HTML and CSS is processed sequentially
+
+- 3 Types of selectors: Element, Class, Id
+
+- Combining selectors: Very powerful
+a. Element.class selector: Selects element that has class applied to it
+b. Child selector (div > p): Every p element that is a DIRECT  child of the div element. Read from right to left.
+c. Descendent selector (div p): Every p element that is inside the div element.
+
+- Pseudo Selectors - 5 common ones
+:link
+:visited
+:hover
+:active
+:nth-child(n)
+
+- Margins collapse vertically, i.e. the biggest margin remains. But not horizontally.
+
+
+- CSS Conflict Resolution
+Origin: If same css property is re-declared, last declaration wins
+Merge: Non conflicting declarations merge
+Inheritance: All children inherit parent property.
+Specificity: Most specific selector combination wins. If declarations are parallel, then choose selector that is most specific 
+
+Score:
+
+Style      ID     Class/Pseudo Class/Attribute    Number of Element Selectors
+
+!important overrides specificity
+
+- Float
+Takes element out of regular document flow, but the element still has a position in document flow. It just isn’t it’s regular one.
+Display becomes inline
+Clear resumes regular document flow for that element
+
+- Positioning
+Relative: Relative to its position in the normal document flow. Relative positioning is not taken out of normal document flow.
+
+Absolute: All offsets, top, bottom, left, right, are all relative to the position of the nearest ancestor which has positioning set on it other than static. The element is taken out out of its normal document flow
 
  
